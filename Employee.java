@@ -1,25 +1,38 @@
 public class Employee {
-    int id;
-    String name;
-    double salary;
-    String employmentType;
 
-    
-    public Employee(int id, String name, double salary, String employmentType) {
-        this.id = id;
-        this.name = name;
-        this.salary = salary;
-        this.employmentType = employmentType;
-    }
-
-    
-    public void EmployeeInfo() {
-        System.out.println("Employee ID: " + id);
-        System.out.println("Name: " + name);
-        System.out.println("Salary: " + salary);
-        System.out.println("Employment Type: " + employmentType);
-        
-    }
-}
+          static String companyName ;
+          static String headquarters ;
+          static int totalEmployees ;
+          String name;
+          int age;
+          String position;
+           double salary;
 
 
+           static {
+              companyName = "Mphasis";
+              headquarters = "Banglore";
+              totalEmployees = 500;
+            }
+ 
+            public Employee(String name, int age, String position, double salary) {
+                  this.name = name;
+                   this.age = age;
+                   this.position = position;
+                   this.salary = salary;
+
+              }
+           
+              public void printEmployeeInfo() {
+
+               System.out.println("companyName: " +companyName);
+               System.out.println("headquaters: " +headquarters);
+               System.out.println("totalEmployees: " +totalEmployees);
+               System.out.println("name: " +name);
+               System.out.println("age: " +age);
+               System.out.println("position: " +position);
+               System.out.println("salary: " +salary);
+               }
+ }
+
+     
