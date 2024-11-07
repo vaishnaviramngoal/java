@@ -1,0 +1,39 @@
+ public class CollegeStudent  {
+
+          public String name;
+          protected int StudId;
+          int age;
+          private String email;
+
+         public CollegeStudent() {
+            this.name = "kavya";
+            this.age = 23;
+            System.out.println("college student details");
+          }
+
+          private CollegeStudent(int StudId) {
+            this.StudId =StudId;
+              System.out.println("college student id: " +StudId);
+           }
+
+           public void getInfo() {
+             System.out.println("student Infomation : " +name);
+            }
+
+           protected void getStudid() {
+               this.age = 24;
+               System.out.println(" student info with age");
+            }
+
+           void checkAddress(){
+              System.out.println("age:" +age);
+            }
+
+         private void setEmail(String email) {
+           this.email=email;
+            System.out.println("student email");
+          }
+
+        }
+
+ 
